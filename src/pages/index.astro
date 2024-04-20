@@ -1,9 +1,92 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
 ---
+
 <MainLayout title="Titel">
-	<article>
-		<p>Index indhold</p>
-	</article>
+  <section class="grid grid-cols-2 m-5 xl:mt-20">
+    <div class="xl:ml-96">
+      <p class="text-lg xl:text-2xl xl:mb-3">Kontakt</p>
+      <div class="text-rod sm:text-sm md:text-lg leading-7 xl:leading-10 xl:text-lg">
+        <a class="hover:underline" href="tel:71202231">+45 71202231</a>
+        <br />
+        <a class="hover:underline" href="mailto:nannahoeg@hotmail.com">nannahoeg@hotmail.com</a>
+        <br />
+        <a class="hover:underline" href="">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="md:mb-20">
+      <img class="md:w-96 md:mb-1.5" src="/mig.webp" alt="mig" />
+      <p class="text-lg md:text-2xl">Nanna Anker Høeg</p>
+    </div>
+  </section>
+
+  <section class="bg-[url('/rammemobil.webp')] bg-cover my-12 w-full h-500 md:bg-[url('/Exclude.webp')] md:h-900">
+    <div class="flex pl-10 md:pl-0 m-auto pt-110 md:pt-270 md:ml-580 flex-col w-96 md:w-390">
+      <p class="text-xl pt-5 md:text-2xl mb-1 md:mb-2"><font class="text-4xl md:text-5xl">O</font>m mig</p>
+      <p class="text-sm md:text-base leading-5 md:leading-7 font-sans">Jeg er 23 år gammel og igang med at uddanne mig som multimediedesigner. <br /> Mit fokus er webdesign, men jeg har tilegnet mig flere kompetencer, som f.eks. kodning af hjemmesider og producering af SoMe indhold. <br class="md:hidden" /> <br /> Jeg synes det er sjovt at arbejde med forskellige visuelle udtryk, og jeg holder mig opdateret på de nyeste tendenser inden for design. <br /> Jeg er nysgerrig og engageret og jeg glæder mig til at lære en masse på min kommende praktikplads.</p>
+    </div>
+  </section>
+
+  <div class="flex justify-center md:mb-5 md:mt-40 mt-16">
+    <h1 class="text-xl md:text-2xl"><font class="text-4xl md:text-5xl">M</font>ine tidligere projekter</h1>
+  </div>
+
+  <div class="max-w-2xl flex m-auto">
+    <div id="default-carousel" class="relative w-700 overflow-hidden" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-500 w-80 md:w-500 md:h-700" data-carousel-inner>
+        <!-- Item 1 -->
+        <div class="hidden duration-700 hover:scale-105 ease-in-out" data-carousel-item>
+          <a href="https://district19-exam.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR0On-YMIvmbnWT9uNd5_xk6qId0wbO2uE8zLNzqh0J8pH3-P_bl189ZpWs_aem_AYaIBpzCNvwK4uGIBGmpOSkg0UQI-brXfh_eKuo7Z5CexVBmy11cPqPIbyX9ODLysgaGCwscDM14FOUivdY_H46e"><img src="ff2.webp" class="m-auto w-72 md:w-450 border border-solid border-rod mt-7" alt="Slide 1" /></a>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 hover:scale-105 ease-in-out" data-carousel-item>
+          <a href="https://digitalcleanupdk.netlify.app/"><img src="dtrash.webp" class="m-auto border border-solid border-rod w-72 md:w-450 mt-7" alt="Slide 2" /></a>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 hover:scale-105 ease-in-out" data-carousel-item>
+          <a href="https://cphlightfestival.netlify.app/?fbclid=IwAR3RsLi32wZDD-lZZ_X0idAJUWwfu5AdwWwcL2yE2GQG05S5ZWLmrXL999U_aem_AbRpQw0KYv7uVuTreVNg-z4SgSgmGrW6yomu6xb2SlfjDcQBMGijrlHa1EOAVxyo5nxWRGtUB_r4oPWmPUpwBX5X"><img src="cphlight.webp" class="m-auto w-72 border border-solid border-rod md:w-450 mt-7" alt="Slide 3" /></a>
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 hover:scale-105 ease-in-out" data-carousel-item>
+          <a href="https://661935d699b0811d07e8f565--idyllic-daffodil-8f8c2c.netlify.app/na_abonnement"><img src="bonfromage.webp" class="m-auto w-72 border border-solid border-rod md:w-450 mt-7" alt="Slide 3" /></a>
+        </div>
+      </div>
+
+      <button type="button" class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-lyserod rounded-full hover:bg-gray-300 focus:outline-none transition" data-carousel-prev>
+        <svg class="w-7 h-7 md:h-10 md:w-10 text-rod" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button type="button" class="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-lyserod rounded-full hover:bg-gray-300 focus:outline-none transition" data-carousel-next>
+        <svg class="w-7 h-7 md:h-10 md:w-10 text-rod" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <section class="bg-[url('/Subtract.webp')] bg-cover w-410 h-96 md:w-700 md:h-560 m-auto my-10 md:my-32">
+    <div class="flex m-auto pt-20 flex-col w-96">
+      <div class="flex flex-row m-auto">
+        <p class="mb-2 md:mb-5 pt-5 md:pt-100px md:pr-6 pr-5 text-xl md:text-2xl"><font class="text-4xl md:text-5xl">M</font>ine færdigheder</p>
+      </div>
+
+      <div class="grid text-center grid-cols-2 gap-10 m-auto leading-9 text-sm pr-5 font-sans md:text-xl md:leading-10">
+        <ul class="">
+          <li>Figma</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>Adobe XD</li>
+        </ul>
+        <ul>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Tailwind</li>
+          <li>Alpine.js</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </MainLayout>
