@@ -1,31 +1,30 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import '../styles/tailwind.css';
-import 'animate.css';
+import "../styles/tailwind.css";
+import "animate.css";
 const { title } = Astro.props;
 ---
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{Astro.props.title}</title>
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="https://use.typekit.net/wsz1ltk.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{Astro.props.title}</title>
+  </head>
 
-		<header>
-			<Header></Header>
-		</header>
-		
-		<main>
-			<slot />
-		</main>
+  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover font-futura">
+    <header></header>
 
-		<footer>
-			<Footer></Footer>
-		</footer>
-			
-	</body>
+    <main>
+      <slot />
+    </main>
+
+    <footer class="flex"><p class="m-auto text-sm md:text-lg my-5 font-thin font-sans">Nanna Anker Høeg</p></footer>
+  </body>
 </html>
