@@ -6,7 +6,7 @@ module.exports = {
 
           screens: {
    
-            'mobilsmall': {'max': '900px'},
+            'mobilsmall': {'max': '700px'},
      
             'mobilstor': {'max': '932px'},
     
