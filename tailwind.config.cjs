@@ -3,6 +3,15 @@ module.exports = {
 
     theme: {
         extend: {
+
+          screens: {
+   
+            'mobilsmall': {'max': '900px'},
+     
+            'mobilstor': {'max': '932px'},
+    
+          },
+
           colors: {
             'lyserod': '#FFF7FE',
             'rod': '#DA1919',
