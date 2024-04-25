@@ -38,7 +38,10 @@ module.exports = {
 
            
             fontFamily: {
-              'futura': ['futura', 'futura-pt, sans-serif;']
+              'futura': ['futura-pt', 'sans-serif;'],
+              'futuralight': ['futura-pt', 'sans-serif;'],
+              
+
             },
 
         }

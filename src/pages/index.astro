@@ -2,11 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Titel">
-  <section class="grid grid-cols-2 m-5 xl:mt-20">
+<MainLayout title="nannaanker">
+  <section class="grid grid-cols-2 m-5 xl:gap-60 xl:mt-20">
     <div class="xl:ml-96">
-      <p class="text-sm md:text-3xl xl:text-2xl md:mb-3">Kontakt</p>
-      <div class="text-rod font-futura mobilsmall:text-xs mobilsmall:leading-6 md:leading-10 xl:leading-10 md:text-xl xl:text-lg">
+      <p class="text-lg mb-1 md:text-3xl xl:text-2xl md:mb-3">Kontakt</p>
+      <div class="text-rod font-futuralight mobilsmall:text-sm mobilsmall:leading-5 md:leading-10 xl:leading-8 md:text-xl xl:text-xl">
         <a class="hover:underline" href="tel:71202231">+45 71202231</a>
         <br />
         <a class="hover:underline" href="mailto:nannahoeg@hotmail.com">nannahoeg@hotmail.com</a>
@@ -16,23 +16,23 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="md:mb-5 xl:mb-20">
-      <img class="md:w-96 mobilsmall:w-52 md:mb-1.5" src="/mig.png" alt="mig" />
-      <p class="text-sm md:text-3xl xl:text-2xl">Nanna Anker Høeg</p>
+      <img class="md:w-96 mobilsmall:w-52 mobilsmall:mb-0 mb-1" src="/mig.png" alt="mig" />
+      <p class="text-lg md:text-3xl xl:text-2xl">Nanna Anker Høeg</p>
     </div>
   </section>
 
   <section class="bg-[url('/rammemob.png')] mobilsmall:bg-center xl:bg-cover bg-cover md:bg-center xl:bg-left h-390 my-12 xl:bg-[url('/Exclude.webp')] md:h-900">
     <div class="flex pl-10 xl:pl-10 md:pl-0 m-auto mobilsmall:pt-16 md:pt-32 xl:pt-270 flex-col w-72 md:w-410 xl:w-390">
       <p class="md:text-3xl xl:text-xl mobilsmall:text-lg mobilsmall:pt-0 pt-5 mb-1 md:mb-2"><font class="text-4xl mobilsmall:text-3xl md:text-6xl xl:text-5xl">O</font>m mig</p>
-      <p class="md:text-2xl mobilsmall:text-xs xl:text-base leading-5 md:leading-normal font-sans">Jeg er 24 år gammel og igang med at uddanne mig som multimediedesigner. <br /> Mit fokus er webdesign, men jeg har tilegnet mig flere kompetencer, som f.eks. kodning af hjemmesider og producering af SoMe indhold. <br class="md:hidden" /> <br /> Jeg synes det er sjovt at arbejde med forskellige visuelle udtryk, og jeg holder mig opdateret på de nyeste tendenser inden for design. <br /> Jeg er nysgerrig og engageret og jeg glæder mig til at lære en masse på min kommende praktikplads.</p>
+      <p class="md:text-2xl mobilsmall:text-xs xl:text-base leading-5 md:leading-normal font-light font-sans">Jeg er 24 år gammel og igang med at uddanne mig som multimediedesigner. <br /> Mit fokus er webdesign, men jeg har tilegnet mig flere kompetencer, som f.eks. kodning af hjemmesider og producering af SoMe indhold. <br /> <br /> Jeg synes det er sjovt at arbejde med forskellige visuelle udtryk, og jeg holder mig opdateret på de nyeste tendenser inden for design. <br /> Jeg er nysgerrig og engageret og jeg glæder mig til at lære en masse på min kommende praktikplads.</p>
     </div>
   </section>
 
   <div class="flex justify-center md:mb-5 md:mt-5 xl:mt-40 mt-16">
-    <h1 class="md:text-3xl xl:text-xl mobilsmall:text-lg"><font class="xl:text-5xl mobilsmall:text-3xl md:text-6xl">M</font>ine tidligere projekter</h1>
+    <h1 class="md:text-3xl xl:text-2xl mobilsmall:text-lg"><font class="xl:text-5xl mobilsmall:text-3xl md:text-6xl">M</font>ine tidligere projekter</h1>
   </div>
 
-  <div class="relative mobilsmall:max-w-[290px] max-w-2xl m-auto">
+  <div class="relative mobilsmall:max-w-[260px] max-w-2xl mobilsmall:-mt-3 -mt-5 m-auto">
     <div id="wrapper" class="overflow-auto xl:overflow-hidden flex gap-5 snap-x">
       <!-- Item 1 -->
       <div id="slide" class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
@@ -67,16 +67,17 @@ import MainLayout from "../layouts/MainLayout.astro";
   <section class="bg-[url('/rammeprøv.png')] mobilsmall:p-16 bg-cover mobilsmall:bg-contain mobilsmall:bg-no-repeat mobilsmall:bg-center md:w-700 md:h-560 m-auto mt-20 mb-5 md:my-32">
     <div class="flex m-auto pt-20 mobilsmall:pt-5 flex-col">
       <div class="flex flex-row m-auto">
-        <p class="mb-2 md:mb-5 md:pt-100px md:pr-6 pr-5 md:text-3xl xl:text-2xl mobilsmall:text-lg"><font class="xl:text-5xl mobilsmall:text-3xl md:text-6xl">M</font>ine færdigheder</p>
+        <p class="mb-3 md:mb-7 md:pt-100px md:pr-6 pr-5 md:text-3xl xl:text-2xl mobilsmall:text-lg"><font class="xl:text-5xl mobilsmall:text-3xl md:text-6xl">M</font>ine færdigheder</p>
       </div>
 
-      <div class="grid text-center grid-cols-2 mobilsmall:gap-5 gap-10 m-auto mobilsmall:leading-7 xl:leading-10 text-sm pr-5 font-sans md:text-2xl xl:text-xl md:leading-10">
-        <ul class="">
+      <div class="grid text-center grid-cols-2 m-auto mobilsmall:leading-6 text-xs pr-5 font-sans md:text-2xl xl:text-lg md:leading-10 xl:leading-10">
+        <ul class="border-solid border-0 border-r pr-5 border-rod">
           <li>Figma</li>
           <li>Illustrator</li>
           <li>Photoshop</li>
           <li>Adobe XD</li>
         </ul>
+
         <ul>
           <li>CSS</li>
           <li>HTML</li>
