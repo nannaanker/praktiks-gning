@@ -57,7 +57,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </div>
 
-    <button id="prevbtn" type="button" class="flex absolute hidden top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-lyserod bg-opacity-70 rounded-full hover:bg-gray-300 focus:outline-none transition">
+    <button id="prevbtn" type="button" class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-lyserod bg-opacity-70 rounded-full hover:bg-gray-300 focus:outline-none transition">
       <svg class="w-7 h-7 md:h-10 md:w-10 text-rod" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
@@ -99,13 +99,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     const slide = document.querySelector("#slide");
     const wrapper = document.querySelector("#wrapper");
     let count = 0;
+    prevBtn.style.visibility = "hidden";
 
     nextBtn.addEventListener("click", () => {
       count++;
       if (count === 4) {
-        nextBtn.style.display = "none";
+        nextBtn.style.visibility = "hidden";
       } else if (count >= 1) {
-        prevBtn.style.display = "block";
+        prevBtn.style.visibility = "visible";
       }
       const scrollAmount = slide.offsetWidth;
       wrapper.scrollBy({
@@ -118,10 +119,10 @@ import MainLayout from "../layouts/MainLayout.astro";
       count--;
 
       if (count === 0) {
-        prevBtn.style.display = "none";
+        prevBtn.style.visibility = "hidden";
       } else if (count >= 1) {
-        prevBtn.style.display = "block";
-        nextBtn.style.display = "block";
+        prevBtn.style.visibility = "visible";
+        nextBtn.style.visibility = "visible";
       }
       const scrollAmount = slide.offsetWidth;
       wrapper.scrollBy({
