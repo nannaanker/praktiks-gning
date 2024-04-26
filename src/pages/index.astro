@@ -38,6 +38,10 @@ import MainLayout from "../layouts/MainLayout.astro";
       <div id="slide" class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
         <a href="https://district19-exam.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR0On-YMIvmbnWT9uNd5_xk6qId0wbO2uE8zLNzqh0J8pH3-P_bl189ZpWs_aem_AYaIBpzCNvwK4uGIBGmpOSkg0UQI-brXfh_eKuo7Z5CexVBmy11cPqPIbyX9ODLysgaGCwscDM14FOUivdY_H46e"><img src="ff2.webp" class="m-auto border border-solid border-rod mt-7 mobilsmall:max-w-[260px] md:max-w-[400px] xl:max-w-[450px]" alt="Slide 1" /></a>
       </div>
+      <!-- Item 3 -->
+      <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
+        <a href="https://plasticchange-zen.netlify.app/"><img src="plast.png" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 3" /></a>
+      </div>
       <!-- Item 2 -->
       <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
         <a href="https://digitalcleanupdk.netlify.app/"><img src="dtrash.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 2" /></a>
@@ -46,13 +50,14 @@ import MainLayout from "../layouts/MainLayout.astro";
       <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
         <a href="https://cphlightfestival.netlify.app/?fbclid=IwAR3RsLi32wZDD-lZZ_X0idAJUWwfu5AdwWwcL2yE2GQG05S5ZWLmrXL999U_aem_AbRpQw0KYv7uVuTreVNg-z4SgSgmGrW6yomu6xb2SlfjDcQBMGijrlHa1EOAVxyo5nxWRGtUB_r4oPWmPUpwBX5X"><img src="cphlight.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 3" /></a>
       </div>
+
       <!-- Item 4 -->
       <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
         <a href="https://661935d699b0811d07e8f565--idyllic-daffodil-8f8c2c.netlify.app/na_abonnement"><img src="bonfromage.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 3" /></a>
       </div>
     </div>
 
-    <button id="prevbtn" type="button" class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-lyserod bg-opacity-70 rounded-full hover:bg-gray-300 focus:outline-none transition">
+    <button id="prevbtn" type="button" class="flex absolute hidden top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-lyserod bg-opacity-70 rounded-full hover:bg-gray-300 focus:outline-none transition">
       <svg class="w-7 h-7 md:h-10 md:w-10 text-rod" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
@@ -93,8 +98,15 @@ import MainLayout from "../layouts/MainLayout.astro";
     const nextBtn = document.querySelector("#nextbtn");
     const slide = document.querySelector("#slide");
     const wrapper = document.querySelector("#wrapper");
+    let count = 0;
 
     nextBtn.addEventListener("click", () => {
+      count++;
+      if (count === 4) {
+        nextBtn.style.display = "none";
+      } else if (count >= 1) {
+        prevBtn.style.display = "block";
+      }
       const scrollAmount = slide.offsetWidth;
       wrapper.scrollBy({
         left: scrollAmount,
@@ -103,6 +115,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     });
 
     prevBtn.addEventListener("click", () => {
+      count--;
+
+      if (count === 0) {
+        prevBtn.style.display = "none";
+      } else if (count >= 1) {
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "block";
+      }
       const scrollAmount = slide.offsetWidth;
       wrapper.scrollBy({
         left: -scrollAmount,
