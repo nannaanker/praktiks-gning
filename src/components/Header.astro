@@ -1,0 +1,55 @@
+---
+
+---
+
+<div class="flex flex-row px-5 md:px-10 xl:px-20 md:mt-0 border-solid border-rod border-b- shadow">
+  <div class="flex flex-row my-5">
+    <a href="/">
+      <img class="h-10" src="Subtract.webp" alt="" />
+    </a>
+
+    <p class="text-sm md:ml-2 font-light m-auto">Portfolio</p>
+  </div>
+  <div class="flex justify-end text-sm md:text-base md:flex-row grow">
+    <div class="my-auto menu flex flex-col md:flex-row gap-7 text-rod font-futuralight mobilsmall:text-sm xl:text-md m-5">
+      <div class="hover:underline">
+        <a class="" href="/">Om mig</a>
+      </div>
+      <div class="hover:underline">
+        <a href="/projekter">Mine projekter</a>
+      </div>
+      <div class="hover:underline">
+        <a href="/kontakt">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="flex grow justify-end md:self-center hidden">
+      <div class="burger-active h-3 md:ml-72 hidden flex flex-col">
+        <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-45"></div>
+        <div class="bar w-8 h-0.5 bg-[#FF0000] rotate-140 -mt-0.5"></div>
+      </div>
+      <div class="burger-lukket flex flex-col gap-2 md:ml-72">
+        <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+        <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+        <div class="bar w-8 h-0.5 bg-[#FF0000]"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const menu = document.querySelector(".menu");
+  const burgeractive = document.querySelector(".burger-active");
+  const burgerlukket = document.querySelector(".burger-lukket");
+  burgerlukket.addEventListener("click", () => {
+    burgeractive.classList.remove("hidden");
+    menu.classList.remove("hidden");
+    burgerlukket.classList.add("hidden");
+  });
+
+  burgeractive.addEventListener("click", () => {
+    burgerlukket.classList.remove("hidden");
+    menu.classList.add("hidden");
+    burgeractive.classList.add("hidden");
+  });
+</script>

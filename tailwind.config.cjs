@@ -42,8 +42,23 @@ module.exports = {
 
             },
 
+
+            fontFamily: {
+              'aktiv': ['aktiv-grotesk-extended; font-style: normal font-weight: 200; ', 'sans-serif;'],
+              
+            },
+            
+
+
+
+
         }
       },
+
+
+      
+
+
 
 
 

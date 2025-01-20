@@ -1,0 +1,12 @@
+---
+import { data } from "../data.js";
+import MainLayout from "../layouts/MainLayout.astro";
+import Filter from "../components/Filter.svelte";
+---
+
+<MainLayout title="nannaanker">
+  <MainLayout>
+    <h1>Her bliver min data vist</h1>
+    <Filter client:load data={data} />
+  </MainLayout>
+</MainLayout>

@@ -3,132 +3,23 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="nannaanker">
-  <section class="grid grid-cols-2 m-5 xl:mt-20">
-    <div class="md:ml-3 xl:ml-80">
-      <p class="text-lg mb-1 md:text-3xl xl:text-2xl md:mb-3">Kontakt</p>
-      <div class="text-rod font-futuralight mobilsmall:text-sm mobilsmall:leading-5 md:leading-9 xl:leading-8 md:text-2xl xl:text-xl">
-        <a class="hover:underline" href="tel:71202231">+45 71202231</a>
-        <br />
-        <a class="hover:underline" href="mailto:nannahoeg@hotmail.com">nannahoeg@hotmail.com</a>
-        <br />
-        <a class="hover:underline" href="https://www.linkedin.com/in/nanna-anker-h%C3%B8eg-a406432b7/">LinkedIn</a>
+  <section class="flex flex-row justify-between md:mx-10 md:gap-10 xl:gap-0 xl:mx-20 mb-20 md:mt-20">
+    <div class="flex flex-col">
+      <p class="md:text-[70px] xl:text-[120px] font-light">Portfolio</p>
+      <div class="flex flex-col ml-2">
+        <p class="md:text-2xl xl:text-3xl">Nanna Anker Høeg</p>
+        <p class="md:text-xl xl:text-2xl font-light mt-1">Multimediedesigner</p>
       </div>
     </div>
 
-    <div class="md:mb-5 xl:mb-10">
-      <img class="md:w-96 mobilsmall:w-52 mobilsmall:mb-0 mb-1" src="/mig4.webp" alt="mig" />
-      <p class="text-sm md:text-3xl xl:text-2xl ml-1 md:ml-3">Nanna Anker Høeg</p>
+    <div class="flex justify-end">
+      <img src="/mig4.webp" alt="" class="w-[600px] xl:mt-10" />
     </div>
   </section>
 
-  <section class="bg-[url('/rammemob.webp')] mobilsmall:bg-center xl:bg-cover bg-cover md:bg-center xl:bg-left h-390 my-12 xl:bg-[url('/Exclude.webp')] md:h-900">
-    <div class="flex pl-7 xl:pl-16 md:pl-0 m-auto mobilsmall:pt-20 md:pt-32 xl:pt-260 flex-col w-72 md:w-410 xl:w-450">
-      <p class="md:text-3xl xl:text-xl mobilsmall:text-lg mobilsmall:pt-0 pt-5 mb-1 md:mb-2"><font class="text-4xl mobilsmall:text-3xl md:text-6xl xl:text-5xl">O</font>m mig</p>
-      <p class="md:text-2xl mobilsmall:text-xs xl:text-lg leading-5 md:leading-normal font-futura">Jeg er 24 år gammel og igang med at uddanne mig som multimediedesigner. <br /> Mit fokus er webdesign, men jeg har tilegnet mig flere kompetencer, som f.eks. kodning af hjemmesider og producering af SoMe indhold. <br /> <br /> Jeg synes det er sjovt at arbejde med forskellige visuelle udtryk, og jeg holder mig opdateret på de nyeste tendenser inden for design. Jeg er nysgerrig og engageret og jeg glæder mig til at lære en masse på min kommende praktikplads.</p>
+  <section class="bg-cover bg-no-repeat bg-[url('/ommigbaggrunddesk.jpg')] w-full py-32 mobilsmall:py-20 px-2 flex flex-col">
+    <div class="flex justify-center">
+      <img src="ommigsektiondesk.svg" alt="" />
     </div>
   </section>
-
-  <div class="flex justify-center md:mb-5 md:mt-5 xl:mt-40 mt-16">
-    <h1 class="md:text-3xl xl:text-2xl mobilsmall:text-lg"><font class="xl:text-5xl mobilsmall:text-3xl md:text-6xl">M</font>ine tidligere projekter</h1>
-  </div>
-
-  <div class="relative mobilsmall:max-w-[260px] max-w-2xl mobilsmall:-mt-3 -mt-5 m-auto">
-    <div id="wrapper" class="overflow-auto xl:overflow-hidden flex gap-5 snap-x">
-      <!-- Item 1 -->
-      <div id="slide" class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
-        <a href="https://district19-exam.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR0On-YMIvmbnWT9uNd5_xk6qId0wbO2uE8zLNzqh0J8pH3-P_bl189ZpWs_aem_AYaIBpzCNvwK4uGIBGmpOSkg0UQI-brXfh_eKuo7Z5CexVBmy11cPqPIbyX9ODLysgaGCwscDM14FOUivdY_H46e"><img src="ff2.webp" class="m-auto border border-solid border-rod mt-7 mobilsmall:max-w-[260px] md:max-w-[400px] xl:max-w-[450px]" alt="Slide 1" /></a>
-      </div>
-      <!-- Item 3 -->
-      <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
-        <a href="https://plasticchange-zen.netlify.app/"><img src="plast.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 3" /></a>
-      </div>
-      <!-- Item 2 -->
-      <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
-        <a href="https://digitalcleanupdk.netlify.app/"><img src="dtrash.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 2" /></a>
-      </div>
-      <!-- Item 3 -->
-      <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
-        <a href="https://cphlightfestival.netlify.app/?fbclid=IwAR3RsLi32wZDD-lZZ_X0idAJUWwfu5AdwWwcL2yE2GQG05S5ZWLmrXL999U_aem_AbRpQw0KYv7uVuTreVNg-z4SgSgmGrW6yomu6xb2SlfjDcQBMGijrlHa1EOAVxyo5nxWRGtUB_r4oPWmPUpwBX5X"><img src="cphlight.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 3" /></a>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="duration-700 hover:scale-105 ease-in-out shrink-0 snap-center">
-        <a href="https://661935d699b0811d07e8f565--idyllic-daffodil-8f8c2c.netlify.app/na_abonnement"><img src="bonfromage.webp" class="m-auto border border-solid border-rod mt-7 md:max-w-[400px] mobilsmall:max-w-[260px] xl:max-w-[450px]" alt="Slide 3" /></a>
-      </div>
-    </div>
-
-    <button id="prevbtn" type="button" class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-lyserod bg-opacity-70 rounded-full hover:bg-gray-300 focus:outline-none transition">
-      <svg class="w-7 h-7 md:h-10 md:w-10 text-rod" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-width="2" d="M15 19l-7-7 7-7"></path>
-      </svg>
-    </button>
-    <button id="nextbtn" type="button" class="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-lyserod bg-opacity-70 rounded-full hover:bg-gray-300 focus:outline-none transition">
-      <svg class="w-7 h-7 md:h-10 md:w-10 text-rod" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-width="2" d="M9 5l7 7-7 7"></path>
-      </svg>
-    </button>
-  </div>
-
-  <section class="bg-[url('/Subtract.webp')] mobilsmall:bg-[url('/rammeprov.webp')] mobilsmall:p-16 bg-cover mobilsmall:bg-contain mobilsmall:bg-no-repeat mobilsmall:bg-center md:w-700 md:h-560 m-auto mt-20 mb-5 md:my-32">
-    <div class="flex m-auto pt-20 mobilsmall:pt-5 flex-col">
-      <div class="flex flex-row m-auto">
-        <p class="mb-3 md:mb-7 md:pt-100px md:pr-6 pr-5 md:text-3xl xl:text-2xl mobilsmall:text-lg"><font class="xl:text-5xl mobilsmall:text-3xl md:text-6xl">M</font>ine færdigheder</p>
-      </div>
-
-      <div class="grid text-center grid-cols-2 m-auto mobilsmall:leading-6 text-xs pr-5 font-futura md:text-2xl xl:text-lg md:leading-10 xl:leading-10">
-        <ul class="border-solid border-0 border-r pr-5 border-rod">
-          <li>Figma</li>
-          <li>Premiere Pro</li>
-          <li>Illustrator</li>
-          <li>Photoshop</li>
-        </ul>
-
-        <ul>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Tailwind</li>
-          <li>Alpine.js</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const prevBtn = document.querySelector("#prevbtn");
-    const nextBtn = document.querySelector("#nextbtn");
-    const slide = document.querySelector("#slide");
-    const wrapper = document.querySelector("#wrapper");
-    let count = 0;
-    prevBtn.style.visibility = "hidden";
-
-    nextBtn.addEventListener("click", () => {
-      count++;
-      if (count === 4) {
-        nextBtn.style.visibility = "hidden";
-      } else if (count >= 1) {
-        prevBtn.style.visibility = "visible";
-      }
-      const scrollAmount = slide.offsetWidth;
-      wrapper.scrollBy({
-        left: scrollAmount,
-        behavior: "smooth",
-      });
-    });
-
-    prevBtn.addEventListener("click", () => {
-      count--;
-
-      if (count === 0) {
-        prevBtn.style.visibility = "hidden";
-      } else if (count >= 1) {
-        prevBtn.style.visibility = "visible";
-        nextBtn.style.visibility = "visible";
-      }
-      const scrollAmount = slide.offsetWidth;
-      wrapper.scrollBy({
-        left: -scrollAmount,
-        behavior: "smooth",
-      });
-    });
-  </script>
 </MainLayout>

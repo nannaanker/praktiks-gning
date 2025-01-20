@@ -12,18 +12,18 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/Subtract.webp" />
     <link rel="stylesheet" href="https://use.typekit.net/wsz1ltk.css" />
     <link rel="stylesheet" href="https://use.typekit.net/wsz1ltk.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title}</title>
   </head>
 
-  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover font-futura">
-    <header></header>
+  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover font-aktiv">
+    <Header />
 
     <main>
       <slot />
     </main>
-
-    <footer class="flex"><p class="m-auto text-sm md:text-base mt-5 mb-2 font-light font-futura">Nanna Anker Høeg</p></footer>
   </body>
 </html>
