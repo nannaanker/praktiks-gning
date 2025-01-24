@@ -3,20 +3,29 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="nannaanker">
-  <section class="flex flex-row justify-between md:mx-10 md:gap-10 xl:gap-0 xl:mx-20 mb-20 md:mt-20">
-    <div class="flex flex-col justify-between relative slide-in-left">
+  <section class="flex flex-col md:flex-row justify-between items-center md:gap-5 xl:gap-0 md:mx-10 xl:mx-20 mb-10 mt-20">
+    <!-- Tekst-sektion -->
+    <div class="flex flex-col justify-between text-center md:text-left slide-in-left w-full md:w-1/2">
       <!-- Portfolio Title -->
-      <p class="md:text-[70px] xl:text-[230px] font-titel m-0 p-0">Portfolio</p>
+      <p class="text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[11rem] xl:text-[13rem] font-titel leading-none mb-5 md:mb-0">Portfolio</p>
 
-      <div class="flex flex-col ml-2 slide-in-left">
-        <p class="md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
-        <p class="md:text-xl xl:text-3xl mt-1 font-elza font-extralight">Multimediedesigner</p>
+      <!-- Tekst under billede -->
+      <div class="flex flex-col md:mt-5 hidden md:block md:ml-2">
+        <p class="text-lg sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
+        <p class="text-base sm:text-lg md:text-xl xl:text-2xl font-elza font-extralight">Multimediedesigner</p>
       </div>
     </div>
 
-    <!-- Billedet af dig -->
-    <div class="flex justify-end relative slide-in-right">
-      <img src="/mig4.webp" alt="" class="w-[600px] xl:mt-10" />
+    <!-- Billede-sektion -->
+    <div class="flex flex-col items-center md:justify-end slide-in-right">
+      <!-- Billede -->
+      <img src="/mig4.webp" alt="Billede af Nanna" class="w-[450px] xl:w-[600px] mb-3 md:mb-0" />
+
+      <!-- Teksten under billede på mobil -->
+      <div class="flex flex-row gap-3 md:hidden">
+        <p class="text-xl sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
+        <p class="text-xl sm:text-lg md:text-xl xl:text-3xl font-elza font-extralight">Multimediedesigner</p>
+      </div>
     </div>
   </section>
 

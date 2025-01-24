@@ -3,19 +3,31 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="nannaanker">
-  <section class="bg-[url('/Subtract.webp')] mobilsmall:bg-[url('/rammeprov.webp')] mobilsmall:p-16 bg-cover mobilsmall:bg-contain mobilsmall:bg-no-repeat mobilsmall:bg-center md:w-700 md:h-560 m-auto mb-5 md:my-32 flex">
-    <div class="m-auto">
-      <p class="text-lg md:text-2xl xl:text-[50px] mb-5 font-titel">Kontakt</p>
-      <div class="text-rod font-elza font-medium mobilsmall:text-sm mobilsmall:leading-5 md:leading-7 md:text-base">
-        <a class="hover:underline hover:scale-105" href="tel:71202231">+45 71 20 22 31</a>
-        <br />
-        <a class="hover:underline hover:scale-105" href="mailto:nannahoeg@hotmail.com">nannahoeg@hotmail.com</a>
-        <br />
-        <div class="flex flex-row gap-1">
-          <a class="" href="https://www.linkedin.com/in/nanna-anker-h%C3%B8eg-a406432b7/"><img class="w-9 hover:scale-105" src="public/linkedin-svgrepo-com.svg" alt="" /></a>
-          <a class="" href="https://www.linkedin.com/in/nanna-anker-h%C3%B8eg-a406432b7/"><img class="w-9 hover:scale-105" src="public/instagram-svgrepo-com.svg" alt="" /></a>
+  <div class="flex justify-center items-center w-full">
+    <div class="relative group flex flex-col items-center w-[700px] h-[700px] m-auto mx-10">
+      <!-- Billedet -->
+      <img class="w-auto max-w-full m-auto max-h-full p-4" src="/Subtract.webp" alt="ramme" />
+
+      <!-- Kontakt-tekst -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center mr-10 mt-10">
+        <div>
+          <p class="text-3xl mb-2 md:text-[50px] md:mb-5 font-titel text-center">Kontakt</p>
+          <div class="text-rod font-elza font-medium text-sm leading-6 md:leading-7 md:text-base text-center">
+            <a class="hover:underline hover:scale-105" href="tel:71202231">+45 71 20 22 31</a>
+            <br />
+            <a class="hover:underline hover:scale-105" href="mailto:nannahoeg@hotmail.com">nannahoeg@hotmail.com</a>
+            <br />
+            <div class="flex flex-row justify-center gap-1 mt-2">
+              <a class="" href="https://www.linkedin.com/in/nanna-anker-h%C3%B8eg-a406432b7/">
+                <img class="w-7 md:w-9 hover:scale-105" src="/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+              </a>
+              <a class="" href="https://www.instagram.com/nanna.anker/">
+                <img class="w-7 md:w-9 hover:scale-105" src="/instagram-svgrepo-com.svg" alt="Instagram" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </MainLayout>

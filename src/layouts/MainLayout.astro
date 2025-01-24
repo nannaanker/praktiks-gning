@@ -6,23 +6,24 @@ import "animate.css";
 const { title } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/Subtract.webp" />
-    <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
+    <link rel="icon" type="image/png" href="/logo2.png" />
     <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title}</title>
   </head>
 
-  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover bg-fixed">
+  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover bg-fixed h-full flex flex-col">
     <Header />
 
-    <main>
+    <!-- Sørg for, at main-sektionen tager plads nok til at "skubbe" footeren ned -->
+    <main class="flex-grow">
       <slot />
     </main>
+
     <Footer />
   </body>
 </html>

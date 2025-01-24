@@ -2,17 +2,17 @@
 
 ---
 
-<div x-data="{ scroll: false }" @scroll.window="scroll = (window.pageYOffset > 120) ? true : false" :class="{ 'bg-lyserod': scroll, 'bg-transparent': !scroll }" class="flex flex-row px-5 py-3 md:px-20 md:py-5 sticky top-0 b z-50">
+<div x-data="{ scroll: false }" @scroll.window="scroll = (window.pageYOffset > 120) ? true : false" :class="{ 'bg-white': scroll, 'bg-transparent': !scroll }" class="flex flex-row px-10 py-3 xl:px-20 md:py-5 sticky top-0 b z-50">
   <!-- Logo eller Titel -->
   <div class="flex flex-row items-center">
     <a href="/">
       <img class="h-10 hover:scale-105" src="/logo2.png" alt="Logo" />
     </a>
-    <p class="font-light mt-2 font-elza text-sm ml-2">Nanna Anker Høeg</p>
+    <p class="font-light mt-2 font-elza text-xs md:text-sm ml-2">Nanna Anker Høeg</p>
   </div>
 
   <!-- Menu på Desktop (Vises som flex-row) -->
-  <div class="hidden md:flex flex-row gap-5 ml-auto items-center text-rod text-sm font-elza font-medium">
+  <div class="hidden md:flex flex-row gap-5 ml-auto items-center text-rod text-sm font-elza font-medium mr-4">
     <a href="/" class="hover:underline hover:scale-105 focus:underline">OM MIG</a>
     <a href="/projekter" class="hover:underline hover:scale-105 focus:underline">MINE PROJEKTER</a>
     <a href="/kontakt" class="hover:underline hover:scale-105 focus:underline">KONTAKT</a>
@@ -28,8 +28,8 @@
   </div>
 
   <!-- Mobil Menu (Skjult som standard) -->
-  <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50 hidden text-rod text-base font-elza font-medium">
-    <div class="absolute top-5 right-5 font-light text-4xl text-rod cursor-pointer" id="close-btn">×</div>
+  <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50 hidden text-rod text-lg font-elza font-medium">
+    <div class="absolute top-5 right-5 font-thin text-6xl text-rod cursor-pointer" id="close-btn">×</div>
     <a href="/" class="py-4 focus:underline">OM MIG</a>
     <a href="/projekter" class="py-4 focus:underline">MINE PROJEKTER</a>
     <a href="/kontakt" class="py-4 focus:underline">KONTAKT</a>
