@@ -35,19 +35,13 @@ module.exports = {
           },
 
            
-            fontFamily: {
-              'futura': ['futura-pt', 'sans-serif;'],
-              'futuralight': ['futura-pt', 'sans-serif;'],
-              
-
-            },
-
-
-            fontFamily: {
-              'aktiv': ['aktiv-grotesk-extended; font-style: normal font-weight: 200; ', 'sans-serif;'],
-              
-            },
-            
+          fontFamily: {
+            aktiv: ['aktiv-grotesk-extended', 'sans-serif'], // Aktiv grotesk
+            titel: ['proxima-nova-extra-condensed', 'sans-serif'], // Proxima Nova
+            elza: ['elza', 'sans-serif'], // elza
+        
+           
+          },
 
 
 

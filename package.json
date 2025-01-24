@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.1",
+    "@astrojs/svelte": "^7.0.3",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/alpinejs": "^3.13.5",
     "alpinejs": "^3.13.3",
     "animate.css": "^4.1.1",
-    "astro": "^4.0.1",
+    "astro": "^5.1.7",
     "motion": "^10.16.4",
     "tailwindcss": "^3.3.6"
   },

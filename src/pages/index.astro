@@ -4,22 +4,60 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="nannaanker">
   <section class="flex flex-row justify-between md:mx-10 md:gap-10 xl:gap-0 xl:mx-20 mb-20 md:mt-20">
-    <div class="flex flex-col">
-      <p class="md:text-[70px] xl:text-[120px] font-light">Portfolio</p>
-      <div class="flex flex-col ml-2">
-        <p class="md:text-2xl xl:text-3xl">Nanna Anker Høeg</p>
-        <p class="md:text-xl xl:text-2xl font-light mt-1">Multimediedesigner</p>
+    <div class="flex flex-col justify-between relative slide-in-left">
+      <!-- Portfolio Title -->
+      <p class="md:text-[70px] xl:text-[230px] font-titel m-0 p-0">Portfolio</p>
+
+      <div class="flex flex-col ml-2 slide-in-left">
+        <p class="md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
+        <p class="md:text-xl xl:text-3xl mt-1 font-elza font-extralight">Multimediedesigner</p>
       </div>
     </div>
 
-    <div class="flex justify-end">
+    <!-- Billedet af dig -->
+    <div class="flex justify-end relative slide-in-right">
       <img src="/mig4.webp" alt="" class="w-[600px] xl:mt-10" />
     </div>
   </section>
 
   <section class="bg-cover bg-no-repeat bg-[url('/ommigbaggrunddesk.jpg')] w-full py-32 mobilsmall:py-20 px-2 flex flex-col">
     <div class="flex justify-center">
-      <img src="ommigsektiondesk.svg" alt="" />
+      <img src="ommigblob.svg" alt="" />
     </div>
   </section>
 </MainLayout>
+
+<style>
+  /* Slide-in animation */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Applied to text elements (coming from left) */
+  .slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+
+  /* Applied to image element (coming from right) */
+  .slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+</style>

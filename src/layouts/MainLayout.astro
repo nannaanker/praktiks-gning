@@ -10,8 +10,6 @@ const { title } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/Subtract.webp" />
-    <link rel="stylesheet" href="https://use.typekit.net/wsz1ltk.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/wsz1ltk.css" />
     <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
     <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
     <meta name="viewport" content="width=device-width" />
@@ -19,11 +17,12 @@ const { title } = Astro.props;
     <title>{Astro.props.title}</title>
   </head>
 
-  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover font-aktiv">
+  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover bg-fixed">
     <Header />
 
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>

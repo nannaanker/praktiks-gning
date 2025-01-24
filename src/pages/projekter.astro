@@ -5,8 +5,6 @@ import Filter from "../components/Filter.svelte";
 ---
 
 <MainLayout title="nannaanker">
-  <MainLayout>
-    <h1>Her bliver min data vist</h1>
-    <Filter client:load data={data} />
-  </MainLayout>
+  <h1 class="flex flex-row justify-center mt-10 text-[40px] md:text-[50px] font-titel">Mine projekter</h1>
+  <Filter client:load data={data} />
 </MainLayout>
