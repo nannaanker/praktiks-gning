@@ -67,7 +67,7 @@
         </div>
 
         <!-- Knappen "Mere info" (kun på mobil) -->
-        <button class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-rod text-white px-3 py-1.5 text-sm font-medium font-elza hover:scale-105 transition md:hidden" on:click={() => toggleMobileOverlay(item.id)}> SE MERE &rarr; </button>
+        <button class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-rod text-white px-3 py-2 text-xs font-elza font-medium rounded hover:scale-105 transition md:hidden" class:hidden={activeItemId === item.id} on:click={() => toggleMobileOverlay(item.id)}> SE MERE &rarr; </button>
       </div>
     {/each}
   </div>
