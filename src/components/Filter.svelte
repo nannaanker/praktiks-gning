@@ -75,7 +75,7 @@
   <!-- Modal -->
   {#if showModal}
     <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-      <div class="relative bg-lyserod p-7 w-[700px] h-[700px] flex flex-col items-center">
+      <div class="relative bg-lyserod p-7 w-[400px] h-[400px] sm:w-[700px] sm:h-[700px] flex flex-col items-center">
         <button on:click={closeModal} class="absolute top-5 right-5 text-rod hover:scale-105 text-2xl cursor-pointer flex items-center justify-center"> ✕ </button>
         {#if modalGallery.length > 1}
           <button class="absolute left-5 top-1/2 transform -translate-y-1/2 font-elza bg-black bg-opacity-20 text-white hover:text-rod hover:scale-105 px-4 py-2 rounded" on:click={() => (currentImageIndex = (currentImageIndex - 1 + modalGallery.length) % modalGallery.length)}> &larr; </button>

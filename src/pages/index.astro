@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout title="nannaanker">
   <section class="flex flex-col md:flex-row justify-between items-center md:gap-5 xl:gap-0 md:mx-10 xl:mx-20 mb-10 mt-20">
     <!-- Tekst-sektion -->
-    <div class="flex flex-col justify-between text-center md:text-left slide-in-left w-full md:w-1/2">
+    <div class="flex flex-col justify-between text-center md:text-left w-full md:w-1/2">
       <!-- Portfolio Title -->
       <p class="text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[11rem] xl:text-[13rem] font-titel leading-none mb-5 md:mb-0">Portfolio</p>
 
@@ -17,14 +17,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <!-- Billede-sektion -->
-    <div class="flex flex-col items-center md:justify-end slide-in-right">
+    <div class="flex flex-col items-center md:justify-end">
       <!-- Billede -->
       <img src="/mig4.webp" alt="Billede af Nanna" class="w-[450px] xl:w-[600px] mb-3 md:mb-0" />
 
       <!-- Teksten under billede på mobil -->
       <div class="flex flex-row gap-3 md:hidden">
-        <p class="text-xl sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
-        <p class="text-xl sm:text-lg md:text-xl xl:text-3xl font-elza font-extralight">Multimediedesigner</p>
+        <p class="text-lg sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
+        <p class="text-lg sm:text-lg md:text-xl xl:text-3xl font-elza font-extralight">Multimediedesigner</p>
       </div>
     </div>
   </section>
@@ -35,38 +35,3 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 </MainLayout>
-
-<style>
-  /* Slide-in animation */
-  @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  /* Applied to text elements (coming from left) */
-  .slide-in-left {
-    animation: slideInLeft 1s ease-out forwards;
-  }
-
-  /* Applied to image element (coming from right) */
-  .slide-in-right {
-    animation: slideInRight 1s ease-out forwards;
-  }
-</style>
