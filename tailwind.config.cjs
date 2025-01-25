@@ -36,10 +36,9 @@ module.exports = {
 
            
           fontFamily: {
-            aktiv: ['aktiv-grotesk-extended', 'sans-serif'], // Aktiv grotesk
-            titel: ['proxima-nova-extra-condensed', 'sans-serif'], // Proxima Nova
-            elza: ['elza', 'sans-serif'], // elza
-        
+            titel: ['gotti-variable', 'sans-serif'], // Proxima Nova
+            elza: ['poppins', 'sans-serif'], // elza
+           
            
           },
 
