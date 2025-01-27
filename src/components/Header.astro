@@ -54,12 +54,13 @@
   });
 
   document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll("a");
-    const currentPath = window.location.pathname; // Kun stien, uden base-URL eller query-parametre
+    const links = document.querySelectorAll("a"); // Hent alle links
+    const currentPath = window.location.pathname; // Hent kun stien for den aktuelle side (uden base-URL)
+
     links.forEach((link) => {
-      const linkPath = new URL(link.href).pathname; // Hent kun stien fra linkets URL
+      const linkPath = new URL(link.href, window.location.origin).pathname; // Sørg for, at linkets sti er absolut
       if (linkPath === currentPath) {
-        link.classList.add("underline");
+        link.classList.add("underline"); // Tilføj underline til det aktive link
       }
     });
   });
