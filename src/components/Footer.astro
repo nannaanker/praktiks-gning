@@ -1,5 +1,6 @@
 ---
-const isKontaktPage = Astro.url.pathname === "/kontakt";
+const isKontaktPage = Astro.url.pathname.includes("/kontakt");
+
 ---
 
 {
