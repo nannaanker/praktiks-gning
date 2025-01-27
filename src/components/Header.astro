@@ -55,10 +55,10 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("a");
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace(/\/$/, ""); // Fjern afsluttende skråstreg
 
     links.forEach((link) => {
-      const linkPath = new URL(link.href, window.location.origin).pathname;
+      const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/$/, ""); // Fjern afsluttende skråstreg
       console.log(`Comparing: ${linkPath} === ${currentPath}`);
       if (linkPath === currentPath) {
         link.classList.add("underline");
