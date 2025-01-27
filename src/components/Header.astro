@@ -55,8 +55,10 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("a");
+    const currentPath = window.location.pathname; // Kun stien, uden base-URL eller query-parametre
     links.forEach((link) => {
-      if (link.href === window.location.href) {
+      const linkPath = new URL(link.href).pathname; // Hent kun stien fra linkets URL
+      if (linkPath === currentPath) {
         link.classList.add("underline");
       }
     });
