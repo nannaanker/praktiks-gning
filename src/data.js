@@ -60,14 +60,14 @@ export const data = [
    
    
 { name: "Praktikprojekt", 
-    gallery: ["/print/Screenshot 2025-01-22 at 14.51.58.png", "/print/Screenshot 2024-11-03 at 14.56.34.png", "/print/Screenshot 2024-11-03 at 14.55.59.png"],
+    gallery: ["/print/kalender1.webp", "/print/kalender2.webp", "/print/kalender3.webp", "/print/kalender4.png"],
     category: "print", 
     id: "Praktikprojekt1",
     info: "Illustrationer og opsætning af Årets julekalender for Meyers i samarbejde med Mødrehjælpen - Praktikforløb hos Meyers Food 2024",
 },
 
 { name: "Praktikprojekt", 
-    gallery: ["/print/IMG_1945.png", "/print/IMG_1949.png", "/print/IMG_1963.png"],
+    gallery: ["/print/bog.webp", "/print/bog2.webp", "/print/bog3.webp"],
     img:"/print/IMG_1945.png",
     category: "print", 
     id: "Praktikprojekt2",
