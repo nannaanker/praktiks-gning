@@ -36,7 +36,7 @@ module.exports = {
 
            
           fontFamily: {
-            titel: ['gotti-variable', 'sans-serif'], // Proxima Nova
+            titel: ['polymath', 'sans-serif'], // Proxima Nova
             elza: ['poppins', 'sans-serif'], // elza
            
            

@@ -43,7 +43,7 @@
   <!-- Indhold -->
   <div class="flex flex-wrap gap-3 justify-center md:mx-20 md:mb-20">
     {#each filteredData as item (item.id)}
-      <div class="relative group flex flex-col items-center w-80 h-80 bg-white bg-opacity-30 shadow-sm">
+      <div class="relative group flex flex-col items-center rounded-sm w-80 h-80 bg-white bg-opacity-30 shadow-sm">
         <!-- Billedet -->
         <img class="w-auto max-w-full m-auto max-h-full p-4" src={(item.gallery || [item.img])[item.currentPreviewIndex || 0]} alt={item.name} />
 
