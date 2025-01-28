@@ -45,7 +45,7 @@
     {#each filteredData as item (item.id)}
       <div class="relative group flex flex-col items-center rounded-sm w-80 h-80 bg-white bg-opacity-30 shadow-sm">
         <!-- Billedet -->
-        <img class="w-auto max-w-full m-auto max-h-full p-4" src={(item.gallery || [item.img])[item.currentPreviewIndex || 0]} alt={item.alt} loading="lazy" />
+        <img class="w-auto max-w-full m-auto max-h-full p-4" src={(item.gallery || [item.img])[item.currentPreviewIndex || 0]} alt={item.alt} />
 
         <!-- Overlay -->
         <div class="absolute inset-0 bg-white flex flex-col items-center justify-center text-black font-elza text-lg opacity-0 transition-opacity duration-300 md:group-hover:opacity-100" class:opacity-100={activeItemId === item.id}>
@@ -80,7 +80,7 @@
         {#if modalGallery.length > 1}
           <button class="absolute left-5 top-1/2 transform -translate-y-1/2 font-elza bg-black bg-opacity-20 text-white hover:text-rod hover:scale-105 px-4 py-2 rounded" on:click={() => (currentImageIndex = (currentImageIndex - 1 + modalGallery.length) % modalGallery.length)}> &larr; </button>
         {/if}
-        <img src={modalGallery[currentImageIndex]} alt={item.alt} loading="lazy" class="max-w-full max-h-full m-auto" />
+        <img src={modalGallery[currentImageIndex]} alt="forstørret billed" class="max-w-full max-h-full m-auto" />
         {#if modalGallery.length > 1}
           <button class="absolute right-5 top-1/2 transform -translate-y-1/2 font-elza bg-black bg-opacity-20 text-white hover:text-rod hover:scale-105 px-4 py-2 rounded" on:click={() => (currentImageIndex = (currentImageIndex + 1) % modalGallery.length)}> &rarr; </button>
         {/if}
