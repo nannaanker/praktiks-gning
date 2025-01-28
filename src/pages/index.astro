@@ -2,36 +2,36 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="nannaanker">
+<MainLayout title="Nanna Anker - Portfolio" description="Oplev Nanna Anker Høegs kreative arbejde som multimediedesigner.">
   <section class="flex flex-col md:flex-row justify-between items-center md:gap-5 xl:gap-0 mx-5 lg:mx-20 mb-10 mt-20">
     <!-- Tekst-sektion -->
     <div class="flex flex-col justify-between text-center md:text-left w-full md:w-1/2">
       <!-- Portfolio Title -->
-      <p class="text-[3rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-titel font-bold leading-none mb-5 md:mb-0">Portfolio</p>
+      <h1 class="text-[3rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-titel font-bold leading-none mb-5 md:mb-0">Portfolio</h1>
 
       <!-- Tekst under billede -->
       <div class="flex flex-col md:mt-5 hidden md:block md:ml-2">
-        <p class="text-lg sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
-        <p class="text-base sm:text-lg md:text-xl xl:text-2xl font-elza font-extralight">Multimediedesigner</p>
+        <h2 class="text-lg sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</h2>
+        <h3 class="text-base sm:text-lg md:text-xl xl:text-2xl font-elza font-extralight">Multimediedesigner</h3>
       </div>
     </div>
 
     <!-- Billede-sektion -->
     <div class="flex flex-col items-center md:justify-end">
       <!-- Billede -->
-      <img src="/mig4.webp" alt="Billede af Nanna" class="w-[460px] xl:w-[600px] mb-3 md:mb-0" />
+      <img src="/mig4.webp" alt="Billede af Nanna" loading="lazy" class="w-[460px] xl:w-[600px] mb-3 md:mb-0" />
 
       <!-- Teksten under billede på mobil -->
       <div class="flex flex-row gap-3 md:hidden">
-        <p class="text-base sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</p>
-        <p class="text-base sm:text-lg md:text-xl xl:text-3xl font-elza font-extralight">Multimediedesigner</p>
+        <h2 class="text-base sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</h2>
+        <h3 class="text-base sm:text-lg md:text-xl xl:text-3xl font-elza font-extralight">Multimediedesigner</h3>
       </div>
     </div>
   </section>
 
   <section class="bg-cover bg-no-repeat bg-[url('/ommigbaggrunddesk.jpg')] w-full py-32 mobilsmall:py-20 px-2 flex flex-col">
     <div class="flex justify-center">
-      <img src="ommig2.svg" alt="" />
+      <img src="ommig2.svg" alt="Beskrivelse af Nanna Anker Høeg" loading="lazy" />
     </div>
   </section>
 </MainLayout>

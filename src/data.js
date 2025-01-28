@@ -4,10 +4,11 @@ export const data = [
     
     { name: "Skoleprojekt", 
         url:"https://eksamenmusikilejet.netlify.app//",
-        img:"/musikilejet.webp",
+        img:"/musikilejet.webp", 
         category: "websites", 
         id: "Skoljeprojekt1",
         info: "Eksamensprojekt, Redesign for Musik i Lejet med fokus på UX og design - Tredje semester 2024",
+        alt: "Billede af eksamensprojektet Musik i Lejet"
     },
     
     { name: "Skoleprojekt", 
@@ -16,6 +17,7 @@ export const data = [
     category: "websites", 
     id: "Skoljeprojekt2",
     info: "Eksamensprojekt, Redesign for Falafel Factory - Andet semester 2023",
+    alt: "Billede af eksamensprojektet Falafel Factory"
 }, 
 
 { name: "Skoleprojekt", 
@@ -24,6 +26,7 @@ export const data = [
     category: "websites", 
     id: "Skoljeprojekt3",
     info: "Mindre skole projekt, Med fokus på formular design og infografik - Tredje semester 2024",
+    alt: "Billede af eksamensprojektet Plastic Change"
     
 },
 
@@ -33,6 +36,7 @@ export const data = [
     category: "websites", 
     id: "Skoljeprojekt4",
     info: "Mindre skole projekt, Redesign for Copenhagen Lightfestival - Andet semester 2023",
+     alt: "Billede af eksamensprojektet Copenhagen Light Festival"
 },
 
 
@@ -43,6 +47,7 @@ export const data = [
     category: "websites",
     id: "Skoljeprojekt5", 
     info: "Mindre skole projekt, Redesign for Bon Fromage - Første semester 2023",
+     alt: "Billede af eksamensprojektet Osteposten Bon Fromage"
 },
 
 { name: "Skoleprojekt", 
@@ -51,6 +56,7 @@ export const data = [
     category: "websites",
     id: "Skoljeprojekt6", 
     info: "Mindre skole projekt, Redesign for Digital Cleanup Day, med fokus på formulardesign og infografik - Tredje semester 2024",
+    alt: "Billede af eksamensprojektet Digital Cleanup Day"
 },
 
 
@@ -64,6 +70,7 @@ export const data = [
     category: "print", 
     id: "Praktikprojekt1",
     info: "Illustrationer og opsætning af Årets julekalender for Meyers i samarbejde med Mødrehjælpen - Praktikforløb hos Meyers Food 2024",
+    alt: "Billede af julekalender projekt fra Meyers praktik"
 },
 
 { name: "Praktikprojekt", 
@@ -72,6 +79,7 @@ export const data = [
     category: "print", 
     id: "Praktikprojekt2",
     info: "Design og opsætning af projektbog for fællesprojekt med højskolehold - Højskoleforløb 2021",
+     alt: "bogprojekt fra højskoleophold"
 },
 
 
@@ -82,20 +90,24 @@ export const data = [
     category: "illustrations", 
     id: "Illustration til hjemmeside1",
     info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024", 
+    alt: "Illustration hval"
 },
 
 { name: "Illustration til hjemmeside", 
     img:"/illustrationer/flaske2.svg",
     category: "illustrations",
     id: "Illustration til hjemmeside2",
-    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",  
+    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024", 
+    alt: "Illustration af flaske" 
 },
 
 { name: "Illustration til hjemmeside", 
     img:"/illustrationer/hero-unit copy.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside3",
-    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",  
+    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",
+    alt: "Illustration til hjemmeside, Plastic Change",
+    alt: "Illustration af plastikpose"   
 },
 
 { name: "Illustration til hjemmeside", 
@@ -103,6 +115,7 @@ export const data = [
     category: "illustrations", 
     id: "Illustration til hjemmeside4", 
     info: "Illustration til spil - Andet semester 2023", 
+    alt: "Illustration af sardin", 
     special: true
 },
 
@@ -110,7 +123,8 @@ export const data = [
     img:"/illustrationer/skod2 copy.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside5",
-    info: "Illustration til spil - Andet semester 2023",  
+    info: "Illustration til spil - Andet semester 2023",
+    alt: "Illustration af skod",   
     special: true
 },
 
@@ -120,7 +134,8 @@ export const data = [
     img:"/illustrationer/Kopkrog copy.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside6",
-    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",  
+    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",
+    alt: "Illustration af krog"   
     
 },
 
@@ -128,7 +143,8 @@ export const data = [
     img:"/illustrationer/komnufoot copy.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside7",
-    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",  
+    info: "Illustration til hjemmeside, Plastic Change - Tredje semester 2024",
+    alt: "Illustration af plastik på havbund"   
 },
 
 
@@ -136,7 +152,8 @@ export const data = [
     img:"/illustrationer/gamecomplete.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside8",
-    info: "Illustration til spil - Andet semester 2023",  
+    info: "Illustration til spil - Andet semester 2023",
+    alt: "illustration til gampe complete"   
 },
 
 
@@ -145,21 +162,24 @@ export const data = [
     img:"/illustrationer/instruks.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside9",
-    info: "Illustration til spil - Andet semester 2023",  
+    info: "Illustration til spil - Andet semester 2023", 
+    alt: "spilleinstruks"  
 },
 
 { name: "Illustration til hjemmeside", 
     img:"/illustrationer/grønt.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside10",
-    info: "Ufærdig illustration - Lavet under praktikforløb hos Meyers Food 2024",  
+    info: "Ufærdig illustration - Lavet under praktikforløb hos Meyers Food 2024",
+    alt: "Illustration af grøntsager"   
 },
 
 { name: "Illustration til hjemmeside", 
     img:"/illustrationer/mødre.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside11",
-    info: "Ufærdig illustration - Lavet under praktikforløb hos Meyers Food 2024",  
+    info: "Ufærdig illustration - Lavet under praktikforløb hos Meyers Food 2024", 
+    alt: "Illustration af mor og barn"  
 },
 
 
