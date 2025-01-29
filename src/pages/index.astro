@@ -3,35 +3,50 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Nanna Anker - Portfolio" description="Oplev Nanna Anker Høegs kreative arbejde som multimediedesigner.">
-  <section class="flex flex-col md:flex-row justify-between items-center md:gap-5 xl:gap-0 mx-5 lg:mx-20 mb-10 mt-20">
-    <!-- Tekst-sektion -->
-    <div class="flex flex-col justify-between text-center md:text-left w-full md:w-1/2">
-      <!-- Portfolio Title -->
-      <h1 class="text-[3rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] font-titel font-bold leading-none mb-5 md:mb-0">Portfolio</h1>
+  <!-- component -->
+  <div class="py-0">
+    <div class="w-full">
+      <div class="">
+        <div class="flex flex-col relative">
+          <div class="flex min-h-screen sticky top-0 overflow-hidden justify-center items-center w-full">
+            <div id="div1" class="flex justify-center items-center w-full h-full">
+              <div class="px-10 md:py-0">
+                <div x-data="{ text: '', fullText: 'Nanna Anker Høeg', index: 0 }" x-init="let interval = setInterval(() => { 
+                if (index < fullText.length) { 
+                    text += fullText[index]; 
+                    index++; 
+                } else { 
+                    clearInterval(interval);
+                } 
+            }, 100)" class="text-sm md:text-2xl font-elza font-medium text-black">
+                  <span x-text="text"></span>
+                </div>
+                <img src="/Portfolio.svg" alt="h1" class="max-w-full max-h-full" />
 
-      <!-- Tekst under billede -->
-      <div class="flex flex-col md:mt-5 hidden md:block md:ml-2">
-        <h2 class="text-lg sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</h2>
-        <h3 class="text-base sm:text-lg md:text-xl xl:text-2xl font-elza font-extralight">Multimediedesigner</h3>
+                <div x-data="{ text: '', fullText: 'Multimediedesigner', index: 0 }" x-init="let interval = setInterval(() => { 
+                if (index < fullText.length) { 
+                    text += fullText[index]; 
+                    index++; 
+                } else { 
+                    clearInterval(interval);
+                } 
+            }, 100)" class="text-sm md:text-2xl font-elza font-extralight text-black text-right mt-2">
+                  <span x-text="text"></span>
+                </div>
+              </div>
+            </div>
+            <div id="div2">
+              <div class="w-full h-[500px]"></div>
+            </div>
+          </div>
+
+          <div class="flex h-screen sticky top-auto overflow-hidden z-20">
+            <section class="bg-cover bg-no-repeat bg-[url('/baggrund.jpg')] w-full md:py-32 px-3 flex flex-col">
+              <img class="flex m-auto" src="ommig3.svg" alt="Beskrivelse af Nanna Anker Høeg" loading="lazy" />
+            </section>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Billede-sektion -->
-    <div class="flex flex-col items-center md:justify-end">
-      <!-- Billede -->
-      <img src="/mig4.webp" alt="Billede af Nanna" loading="lazy" class="w-[460px] xl:w-[600px] mb-3 md:mb-0" />
-
-      <!-- Teksten under billede på mobil -->
-      <div class="flex flex-row gap-3 md:hidden">
-        <h2 class="text-base sm:text-xl md:text-2xl xl:text-4xl font-elza font-medium">Nanna Anker Høeg</h2>
-        <h3 class="text-base sm:text-lg md:text-xl xl:text-3xl font-elza font-extralight">Multimediedesigner</h3>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-cover bg-no-repeat bg-[url('/ommigbaggrunddesk.jpg')] w-full py-32 mobilsmall:py-20 px-2 flex flex-col">
-    <div class="flex justify-center">
-      <img src="ommig2.svg" alt="Beskrivelse af Nanna Anker Høeg" loading="lazy" />
-    </div>
-  </section>
+  </div>
 </MainLayout>

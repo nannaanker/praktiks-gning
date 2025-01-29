@@ -11,13 +11,17 @@
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.3.1",
+    "@astrojs/react": "^4.2.0",
     "@astrojs/svelte": "^7.0.3",
     "@tailwindcss/container-queries": "^0.1.1",
     "@types/alpinejs": "^3.13.5",
     "alpinejs": "^3.13.3",
     "animate.css": "^4.1.1",
     "astro": "^5.1.7",
+    "framer-motion": "^12.0.6",
     "motion": "^10.16.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "tailwindcss": "^3.3.6"
   },
   "devDependencies": {
