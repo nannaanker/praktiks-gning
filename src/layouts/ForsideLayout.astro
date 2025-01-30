@@ -1,0 +1,63 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/tailwind.css";
+import "animate.css";
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/fav.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oep1tpx.css" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Dynamisk Title -->
+    <title>{title ? title : "Nanna Anker"}</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content={description ? description : "Portfolio for Nanna Anker Høeg, multimediedesigner."} />
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content={title ? title : "Nanna Anker - Portfolio"} />
+    <meta property="og:description" content={description ? description : "Explore the creative work of Nanna Anker Høeg, multimedia designer."} />
+    <meta property="og:image" content="https://nannaanker.netlify.app/fav.png" />
+    <meta property="og:url" content="https://nannaanker.netlify.app" />
+  </head>
+
+  <body class="bg-lyserod bg-[url('/baggrund2.webp')] bg-cover bg-fixed h-full grid grid-rows-[min-content_1fr]">
+    <div class="h-screen col-span-full row-span-2"></div>
+    <Header class="sticky top-0 col-start-1 row-start-1" />
+    <section class="col-start-1 row-start-2">
+      <div class="py-0">
+        <div class="w-full">
+          <div class="">
+            <div class="flex flex-col relative">
+              <div class="flex sticky top-0 overflow-hidden justify-center items-center w-full">
+                <div id="div1" class="flex justify-center items-center w-full h-full">
+                  <img src="/h1.svg" alt="h1" class="max-w-full max-h-full" />
+                </div>
+                <div id="div2">
+                  <div class="w-full h-[500px]"></div>
+                </div>
+              </div>
+
+              <div class="flex min-h-screen sticky top-auto overflow-hidden z-20">
+                <section class="bg-cover bg-no-repeat bg-[url('/ommigbaggrunddesk.jpg')] w-full py-32 mobilsmall:py-20 px-2 flex flex-col">
+                  <div class="flex justify-center">
+                    <img src="ommig2.svg" alt="Beskrivelse af Nanna Anker Høeg" loading="lazy" />
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

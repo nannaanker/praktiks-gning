@@ -170,7 +170,7 @@ export const data = [
     img:"/illustrationer/grønt.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside10",
-    info: "Ufærdig illustration - Lavet under praktikforløb hos Meyers Food 2024",
+    info: "Ufærdig illustration - Lavet i idéudviklingsfasen til en mulepose for Meyers. praktikforløb hos Meyers Food 2024",
     alt: "Illustration af grøntsager"   
 },
 
@@ -178,7 +178,7 @@ export const data = [
     img:"/illustrationer/mødre.svg",
     category: "illustrations", 
     id: "Illustration til hjemmeside11",
-    info: "Ufærdig illustration - Lavet under praktikforløb hos Meyers Food 2024", 
+    info: "Ufærdig illustration - Lavet i idéudviklingsfasen til årets julekalender for Meyers. praktikforløb hos Meyers Food 2024", 
     alt: "Illustration af mor og barn"  
 },
 
