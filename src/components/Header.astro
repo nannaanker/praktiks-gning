@@ -53,13 +53,32 @@
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("a");
     const currentPath = window.location.pathname.replace(/\/$/, ""); // Fjern afsluttende skråstreg
+    const currentHash = window.location.hash; // Få den aktuelle hash (ankerlink)
 
     links.forEach((link) => {
-      const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/$/, ""); // Fjern afsluttende skråstreg
-      console.log(`Comparing: ${linkPath} === ${currentPath}`);
-      if (linkPath === currentPath) {
+      const linkUrl = new URL(link.href, window.location.origin);
+      const linkPath = linkUrl.pathname.replace(/\/$/, ""); // Fjern afsluttende skråstreg
+      const linkHash = linkUrl.hash; // Få hash fra linket
+
+      console.log(`Comparing: ${linkPath} === ${currentPath} && ${linkHash} === ${currentHash}`);
+
+      if (linkPath === currentPath && linkHash === currentHash) {
         link.classList.add("underline");
+      } else {
+        link.classList.remove("underline"); // Fjern understregning, hvis det ikke længere er aktivt
       }
+    });
+
+    // Overvåg hash-ændringer (hvis brugeren scroller manuelt)
+    window.addEventListener("hashchange", () => {
+      const newHash = window.location.hash;
+      links.forEach((link) => {
+        if (link.hash === newHash) {
+          link.classList.add("underline");
+        } else {
+          link.classList.remove("underline");
+        }
+      });
     });
   });
 </script>
