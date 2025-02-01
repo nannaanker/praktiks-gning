@@ -41,7 +41,7 @@
   </nav>
 
   <!-- Indhold -->
-  <div class="flex flex-wrap gap-3 justify-center md:mx-20 md:mb-20">
+  <div class="flex flex-wrap gap-3 justify-center md:mx-20 mb-20">
     {#each filteredData as item (item.id)}
       <div class="relative group flex flex-col items-center rounded-sm w-80 h-80 bg-white bg-opacity-30 shadow-sm">
         <!-- Billedet -->

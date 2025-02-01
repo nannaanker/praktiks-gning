@@ -39,6 +39,7 @@
   const burgerIcon = document.getElementById("burger-icon");
   const mobileMenu = document.getElementById("mobile-menu");
   const closeBtn = document.getElementById("close-btn");
+  const menuLinks = document.querySelectorAll("#mobile-menu a"); // Hent alle links i mobilmenuen
 
   // Toggle burger menu
   burgerIcon.addEventListener("click", () => {
@@ -48,6 +49,13 @@
   // Luk menuen når krydset (×) bliver trykket
   closeBtn.addEventListener("click", () => {
     mobileMenu.classList.add("hidden");
+  });
+
+  // Luk menuen, når der klikkes på et link
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
   });
 
   document.addEventListener("DOMContentLoaded", () => {
