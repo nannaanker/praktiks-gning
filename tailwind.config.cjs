@@ -14,7 +14,7 @@ module.exports = {
 
           colors: {
             'lyserod': '#FFF7FE',
-            'rod': '#DA1919',
+            'rod': '#BA000F',
            
           },
           spacing: {
