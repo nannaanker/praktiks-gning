@@ -95,15 +95,37 @@
 <!-- Modal -->
 {#if showModal}
   <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-    <div class="relative bg-lyserod p-7 w-[400px] h-[400px] sm:w-[700px] sm:h-[700px] flex flex-col items-center">
+    <div class="relative p-7 w-[400px] h-[400px] sm:w-[700px] sm:h-[700px] flex flex-col items-center" class:bg-lyserod={modalGallery[currentImageIndex] !== "/illustrationer/hero-unit copy.svg" && modalGallery[currentImageIndex] !== "/illustrationer/flaske2.svg"} class:bg-[#001A42]={modalGallery[currentImageIndex] === "/illustrationer/hero-unit copy.svg" || modalGallery[currentImageIndex] === "/illustrationer/flaske2.svg"}>
       <button on:click={closeModal} class="absolute top-5 right-5 text-rod hover:scale-105 text-2xl cursor-pointer flex items-center justify-center"> ✕ </button>
+
       {#if modalGallery.length > 1}
         <button class="absolute left-5 top-1/2 transform -translate-y-1/2 font-elza bg-black bg-opacity-20 text-white hover:text-rod hover:scale-105 px-4 py-2 rounded" on:click={() => (currentImageIndex = (currentImageIndex - 1 + modalGallery.length) % modalGallery.length)}> &larr; </button>
       {/if}
-      <img src={modalGallery[currentImageIndex]} alt="forstørret billed" class="max-w-full max-h-full m-auto" />
+
+      <!-- Billede med animation -->
+      <img src={modalGallery[currentImageIndex]} alt="forstørret billede" class="max-w-full max-h-full m-auto transition-all duration-500" class:animate-float={modalGallery[currentImageIndex] === "/illustrationer/hero-unit copy.svg" || modalGallery[currentImageIndex] === "/illustrationer/flaske2.svg" || modalGallery[currentImageIndex] === "/illustrationer/hval.svg"} />
+
       {#if modalGallery.length > 1}
         <button class="absolute right-5 top-1/2 transform -translate-y-1/2 font-elza bg-black bg-opacity-20 text-white hover:text-rod hover:scale-105 px-4 py-2 rounded" on:click={() => (currentImageIndex = (currentImageIndex + 1) % modalGallery.length)}> &rarr; </button>
       {/if}
     </div>
   </div>
 {/if}
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
