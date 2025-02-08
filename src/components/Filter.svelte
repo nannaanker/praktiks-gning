@@ -44,20 +44,24 @@
 
 <!-- Hjemmesidetekst - vises kun hvis websites er aktiv -->
 {#if showWebsiteText}
-  <div id="hjemmesidetekst" class="flex flex-row justify-center w-3/4 md:w-2/4 mx-auto mb-7 font-elza leading-6 md:leading-7 text-sm text-center md:text-left md:text-base font-regular">
-    <p>Bemærk, at de hjemmesider, der er udarbejdet i forbindelse med skoleprojekter, varierer i både funktionalitet og responsivitet. Dette skyldes, at den tid, vi havde til rådighed, var varieret, og at der har været fokus på udvalgte funktioner ud fra den enkelte opgavebeskrivelse. Hjemmesiderne udgør udelukkende redesign-forslag og erstatter ikke virksomhedernes officielle hjemmesider.</p>
+  <div id="hjemmesidetekst" class="flex flex-row justify-center w-3/4 md:w-2/4 mx-auto font-elza leading-6 md:leading-7 text-sm text-center md:text md:text-base font-regular">
+    <p>
+      Bemærk, at de hjemmesider, der er udarbejdet i forbindelse med skoleprojekter, varierer i både funktionalitet og responsivitet. Dette skyldes, at den tid, vi havde til rådighed, var varieret, og at der har været fokus på udvalgte funktioner ud fra den enkelte opgavebeskrivelse. Hjemmesiderne udgør udelukkende redesign-forslag og
+      <span class="hidden xl:inline"><br /></span>
+      erstatter ikke virksomhedernes officielle hjemmesider.
+    </p>
   </div>
 {/if}
 
 <!-- Navigationsmenu -->
-<nav class="mb-7 flex gap-5 md:gap-10 text-rod text-sm md:text-base font-elza font-medium justify-center">
+<nav class="mb-6 mt-12 flex gap-5 md:gap-10 text-rod text-sm md:text-base font-elza font-medium justify-center">
   <button class="hover:underline hover:scale-105 focus:underline" on:click={() => filterByCategory("websites")}>HJEMMESIDER</button>
   <button class="hover:underline hover:scale-105 focus:underline" on:click={() => filterByCategory("print")}>PRINT</button>
   <button class="hover:underline hover:scale-105 focus:underline" on:click={() => filterByCategory("illustrations")}>ILLUSTRATIONER</button>
 </nav>
 
 <!-- Indhold -->
-<div class="flex flex-wrap gap-5 justify-center md:mx-20 mb-20">
+<div class="flex flex-wrap gap-5 justify-center md:mx-20 mb-48">
   {#each filteredData as item (item.id)}
     <div class="relative group flex flex-col items-center rounded-sm w-80 h-80 bg-white bg-opacity-30 shadow-sm">
       <!-- Billedet -->
